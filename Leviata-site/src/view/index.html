@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leviatã</title>
+
+    <link rel="icon" type="image/x-con" href="/public/assets/icon1.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/public/styles/general.css">
+    <link rel="stylesheet" href="/public/styles/home.css">
+
+    <!-- <link rel="stylesheet/less" type="text/css" href="/public/styles/fetch.less"> -->
+    <!-- <link rel="stylesheet" href="/public/styles/responsive.css"> -->
+</head>
+
+<body onload="fetchData()">
+    <div id="page-home">
+        <div class="content">
+            <header>
+                <img src="/public/assets/logo.jpeg" alt="Logomarca">
+                <h1>Equipe Leviatã</h1>
+
+                <nav>
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About</a>
+                </nav>
+
+            </header>
+
+            <main>
+                <div class="slideshow">
+                    <h2>Notícias</h2>
+                    <div class="slide-group">
+                        <div class="slide">
+                            <div class="slideNumber">1/3</div>
+                            <img src="https://areporter.com.br/wp-content/uploads/2020/02/RTEmagicC_equipe_leviata_poraque_uea_1.jpg.jpg" alt="Slide1" style="width: 100%;">
+                            <p>Caption One: Exemplo Slide 1</p>
+                        </div>
+                        <div class="slide" style="width: 100%;">
+                            <div class="slideNumber">2/3</div>
+                            <img src="https://amazonianarede.com.br/ar3/wp-content/uploads/2016/12/Barco-Poraqu_.jpeg" alt="Slide2" style="width: 100%;">
+                            <p>Caption Two: Exemplo Slide 2</p>
+                        </div>
+                        <div class="slide">
+                            <div class="slideNumber">3/3</div>
+                            <img src="https://static.vakinha.com.br/uploads/vakinha/image/130363/31629563825_966ba17eb0_hjjj.jpg?ims=700x410" alt="Slide3" style="width: 100%;">
+                            <p>Caption Three: Exemplo Slide 3</p>
+                        </div>
+
+                        <a class="slideNext" onclick="plusSlides(1)">&#10095</a>
+                        <a class="slidePrev" onclick="plusSlides(-1)">&#10094</a>
+                    </div>
+
+                    <div class="dots" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+
+                <!--Lorem para criar conteudo estatico-->
+
+                <div class="works">
+                    <h2>Publicações</h2>
+                    <div id="cards"></div>
+                </div>
+
+            </main>
+
+            <footer></footer>
+        </div>
+    </div>
+
+    <script src="/public/scripts/carrousel.js"></script>
+    <script src="/public/scripts/fetch.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+</body>
+
+</html>
