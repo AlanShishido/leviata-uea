@@ -1,0 +1,233 @@
+#page-home {
+    height: 100vh;
+    background: url('/public/assets/background.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+#page-home .content {
+    margin: 0 auto;
+}
+
+#page-home .content header {
+    width: 100%;
+    margin-top: 0px;
+    background-color: var(--leviata-azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-home .content header img {
+    width: 72px;
+    height: 72px;
+    margin-left: 60px;
+}
+
+#page-home .content header h1 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#page-home .content header nav {
+    width: 300px;
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-home .content header nav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 22px;
+}
+
+#page-home .content header nav a:hover {
+    background-color: snow;
+}
+
+#page-home .content header nav a.active {
+    border-radius: 8px;
+    background-color: silver;
+    color: white;
+}
+
+main {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slideshow h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+    color: var(--leviata-azul);
+}
+
+.slideshow .slide-group {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.slideshow .slide-group .slide {
+    display: none;
+}
+
+.slideshow .slide-group .slide img {
+    border-radius: 8px;
+}
+
+.slideshow .slideNext,
+.slideshow .slidePrev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.slideshow .slideNext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow a.slideNext:hover,
+.slideshow a.slidePrev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow .slide .slideNumber {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.slideshow .slide p {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slideshow .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: silver;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.works {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.works h2 {
+    color: #080031;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.works #cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 30px;
+    width: 17%;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.works #cards .card {
+    position: relative;
+    cursor: pointer;
+}
+
+.works #cards .card .description {
+    opacity: 0;
+    color: black;
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    z-index: 99;
+    transition: .5s;
+    font-size: 70px;
+}
+
+.works #cards .card .description img {
+    opacity: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.works #cards .card .description p {
+    display: none;
+}
+
+.works #cards .card .description:hover .description {
+    opacity: 1;
+    transition: .5s;
+}
+
+.works #cards .card .description:hover img {
+    opacity: 0.3;
+}
+
+footer {
+    background: var(--leviata-azul);
+    min-height: 58px;
+}
