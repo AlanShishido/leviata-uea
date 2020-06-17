@@ -1,0 +1,112 @@
+#page-contact {
+    height: 100vh;
+    margin: 0 auto;
+    background: url("/public/assets/dsb2019.jpg") no-repeat;
+    background-size: 100%;
+}
+
+#page-contact header {
+    width: 100%;
+    margin-top: 0px;
+    background-color: var(--leviata-azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-contact header img {
+    width: 72px;
+    height: 72px;
+    margin-left: 60px;
+}
+
+#page-contact header h1 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#page-contact header nav {
+    width: 300px;
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-contact header nav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 22px;
+}
+
+#page-contact header nav a:hover {
+    background-color: snow;
+}
+
+#page-contact header nav a.active {
+    border-radius: 8px;
+    background-color: silver;
+    color: white;
+}
+
+.content .works {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.content .works h2 {
+    color: #080031;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.content #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    /* margin: 0 30px; */
+    /* width: 17%; */
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.content #cards .card {
+    position: relative;
+    cursor: pointer;
+}
+
+.content #cards .card .desription {
+    opacity: 0;
+    color: black;
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    z-index: 99;
+    transition: .5s;
+    font-size: 70px;
+}
+
+.content #cards .card img {
+    opacity: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: .5s;
+    backface-visibility: hidden;
+}
+
+.content #cards .card p {
+    display: none;
+}
+
+.content #cards .card:hover .description {
+    opacity: 1;
+    transition: .5s;
+}
+
+.content #cards .card:hover img {
+    opacity: 0.3;
+}
