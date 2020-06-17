@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="icon" type="image/x-con" href="/public/assets/icon1.jpg">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/public/styles/global.css">
+    <link rel="stylesheet" href="/public/styles/contact.css">
+</head>
+
+<body onload="fetchData()">
+    <div id="page-contact">
+        <header>
+            <img src="/public/assets/logo.jpeg" alt="Logomarca">
+            <h1>Equipe Leviatã</h1>
+
+            <nav>
+                <a href="/src/view/index.html"><i class="fa fa-fw fa-home"></i>Inicio</a>
+                <a href="#" class="active"><i class="fa fa-fw fa-address-book"></i>Contato</a>
+                <a href="#"><i class="fa fa-fw fa-question-circle"></i>Sobre</a>
+            </nav>
+
+        </header>
+
+        <div class="content">
+            <main></main>
+
+            <div class="works">
+                <h2>Publicações</h2>
+                <div id="cards"></div>
+            </div>
+        </div>
+
+        <footer></footer>
+    </div>
+
+    <script src="/public/scripts/fetch.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+</body>
+
+</html>
